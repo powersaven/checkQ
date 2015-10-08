@@ -1,0 +1,20 @@
+[server]
+write_servers =
+read_servers =
+
+[table]
+
+
+[cmd_rate]
+insert = 
+delete = 
+update = 
+select = 
+
+[cmd_window]
+cmd_rows = 
+cmd_cols = 
+
+
+
+

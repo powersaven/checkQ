@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rs:definition name="checkQ"
+    xmlns:rs="http://www.schoonerinfotech.com/configSchema" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.schoonerinfotech.com/configSchema rules.xsd ">
+
+<servers>
+    <write ip="127.0.0.1" port="3306" />
+    <read ip="127.0.0.1" port="3306" />
+</servers>
+<tables>
+    <table>
+        <key name="a" type="bigint" />
+        <val name="b" type="varchar" length="128" />
+        <val name="c" type="varchar" length="128" />
+        <val name="d" type="varchar" length="128" />
+        <val name="e" type="varchar" length="128" />
+    </table>
+</tables>
+<cmds>
+    <cmd>
+        <insert />
+        <update />
+        <update />
+        <update />
+        <update />       
+        <select />
+        <delete />
+        <insert />
+        <update />
+        <update />
+        <update />
+        <select />
+    </cmd>
+</cmds>
+
+</rs:definition>

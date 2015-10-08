@@ -1,0 +1,24 @@
+[server]
+write_servers = 10.1.150.1:3306,10.1.152.1:3306
+read_servers = 10.1.150.1:3306,10.1.152.1:3306,10.1.127.1:3306
+
+[table]
+create table test
+(
+    a bigint primary key,
+    b varchar(512)
+);
+
+[cmd_rate]
+insert = 0.3
+delete = 0.1
+update = 0.5
+select = 0.1
+
+[cmd_window]
+cmd_rows = 1
+cmd_cols = 20
+
+
+
+
